@@ -3,21 +3,21 @@ development:
   encoding: unicode
   database: my_twitter_development
   pool: 5
-  username: my_twitter
-  password:
+  username: michaelknueppel
+  password: peculitcher88
 
 test:
   adapter: postgresql
   encoding: unicode
   database: my_twitter_test
   pool: 5
-  username: my_twitter
-  password:
+  username: michaelknueppel
+  password: peculitcher88
 
 production:
   adapter: postgresql
   encoding: unicode
   database: my_twitter_production
   pool: 5
-  username: my_twitter
-  password:
+  username: michaelknueppel
+  password: peculitcher88
