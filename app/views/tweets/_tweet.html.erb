@@ -1,6 +1,6 @@
 <!--div_for creates an html class and unique id's-->
 <%= div_for tweet do %>
-	<div><%= "#{tweet.user.username} tweeted" %></div>
+	<div><%= link_to tweet.user.username.capitalize, tweet.user %> tweeted</div>
 	<div><%= tweet.content %></div> 
-	<div><%= "#{time_ago_in_words(tweet.created_at)} ago" %></div>
+	<div><%= link_to "#{time_ago_in_words(tweet.created_at)} ago", tweet %></div>
 <% end %>
