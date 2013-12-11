@@ -1,0 +1,6 @@
+<!--div_for creates an html class and unique id's-->
+<%= div_for tweet do %>
+	<div><%= "#{tweet.user.username} tweeted" %></div>
+	<div><%= tweet.content %></div> 
+	<div><%= "#{time_ago_in_words(tweet.created_at)} ago" %></div>
+<% end %>

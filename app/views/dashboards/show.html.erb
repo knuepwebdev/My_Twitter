@@ -1,1 +1,8 @@
 <h1>Dashboard</h1>
+<%= form_for @tweet do |form| %>
+	<%= form.label :tweet %>
+	<%= form.text_field :content, placeholder: 'Type your tweet here' %>
+	<%= form.submit 'Tweet' %>
+<% end %>
+
+<%= render @tweets %>
