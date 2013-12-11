@@ -7,6 +7,9 @@ class TweetsController < ApplicationController
 		tweet = current_user.tweets.new(tweet_params)
 		if tweet.save
 			redirect_to dashboard_path
+		else
+			flash.alert = 'Tweet cannot be empty'
+			redirect_to dashboard_path
 		end
 	end
 
