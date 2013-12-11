@@ -4,5 +4,6 @@ MyTwitter::Application.routes.draw do
   resource :dashboard, only: [:show]
   resources :tweets, only: [:show]
   resources :text_tweets, only: [:create]
+  resources :image_tweets, only: [:create]
   resources :users, only: [:show]
 end

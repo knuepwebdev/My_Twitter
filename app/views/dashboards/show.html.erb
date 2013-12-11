@@ -5,4 +5,10 @@
 	<%= form.submit 'Tweet' %>
 <% end %>
 
+<%= form_for @image_tweet do |form| %>
+	<%= form.label :image_tweet %>
+	<%= form.file_field :image %>
+	<%= form.submit 'Tweet' %>
+<% end %>
+
 <%= render @tweets %>
