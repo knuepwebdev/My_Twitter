@@ -1,6 +1,6 @@
 class DashboardsController < ApplicationController
 	def show
-		@tweet = Tweet.new
+		@text_tweet = TextTweet.new
 		@tweets = current_user.tweets
 	end
 end
