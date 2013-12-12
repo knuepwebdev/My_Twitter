@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= form_for(:search, url: search_path, method: :get) do |form| %>
+		<%= form.text_field :searchterm %>
+		<%= form.submit 'Search' %>
+	<% end %> 
 	<div>
 		<% if user_signed_in? %>
 			Welcome, <%= link_to current_user.email, dashboard_path %>
@@ -26,3 +30,4 @@
 	<%= yield %>
 </body>
 </html>
+ 

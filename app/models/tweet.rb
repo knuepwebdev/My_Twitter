@@ -7,5 +7,10 @@ class Tweet < ActiveRecord::Base
   def self.text_tweets
   	where(content_type: 'TextTweet')
   end
+
+  searchable do
+  	text :content do
+  		content.index
+  	end
+  end
 end
-   

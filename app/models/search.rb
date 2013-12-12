@@ -1,4 +1,6 @@
 class Search
+	extend ActiveModel::Naming
+	include ActiveModel::Model
 	attr_reader :searchterm
 
 	def initialize(options = {})
@@ -6,15 +8,8 @@ class Search
 	end
 
 	def tweets
-		Tweet.text_tweets.where(content_id: text_tweets)
-	end
-
-	private
-	def text_tweets
-		TextTweet.where("content LIKE ?", get_search_term)
-	end
-
-	def get_search_term
-		"%#{searchterm}%"
+		Tweet.search do
+			fulltext searchterm
+		end.results		#returns the array of tweets
 	end
 end

@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'paperclip', '3.4.0'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
 
 group :doc do
   gem 'sdoc', require: false
