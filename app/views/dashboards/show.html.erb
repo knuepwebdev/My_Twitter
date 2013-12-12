@@ -1,4 +1,5 @@
 <h1>Dashboard</h1>
+<%= link_to 'Users Directory', users_path %>
 <%= form_for @dashboard.new_text_tweet do |form| %>
 	<%= form.label :tweet %>
 	<%= form.text_field :content, placeholder: 'Type your tweet here' %>

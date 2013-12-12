@@ -9,6 +9,7 @@ class Timeline
 	def tweets
 		Tweet.where(user_id: tweet_user_ids)
 	end
+	#show the user's own tweets and the tweets of followed users
 
 	private
 	def tweet_user_ids
