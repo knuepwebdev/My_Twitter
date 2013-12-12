@@ -7,20 +7,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= link_to 'Users Directory', users_path %>
+	<h1>My Twitter</h1>
+	<div>
+		<% if user_signed_in? %>
+			<div>
+				Logged in as <%= link_to current_user.email, dashboard_path %>
+			</div>
+			<div>
+				<%= link_to 'Edit Profile', edit_user_registration_path %>
+			</div>
+			<div>
+				<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+			</div>
+		<% else %>
+			<div><%= link_to 'Register', new_user_registration_path %></div>
+			<div><%= link_to 'Login', new_user_session_path %></div>
+		<% end %>
+	</div>
 	<%= form_for(:search, url: search_path, method: :get) do |form| %>
 		<%= form.text_field :searchterm %>
 		<%= form.submit 'Search' %>
 	<% end %> 
-	<div>
-		<% if user_signed_in? %>
-			Welcome, <%= link_to current_user.email, dashboard_path %>
-			<%= link_to 'Edit Profile', edit_user_registration_path %>
-			<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-		<% else %>
-			<%= link_to 'Register', new_user_registration_path %>
-			<%= link_to 'Login', new_user_session_path %>
-		<% end %>
-	</div>
 	<% if alert %>
 		<div class='alert'><%= alert %></div>
 	<% end %>
