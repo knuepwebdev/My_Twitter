@@ -1,7 +1,7 @@
 <!--div_for creates an html class and unique id's-->
 <%= div_for tweet do %>
 	<div>
-		<%= display_gravatar(tweet.user) %>
+		<%= link_to display_gravatar(tweet.user), tweet.user %>
 		<%= link_to tweet.user.username.capitalize, tweet.user %> tweeted
 	</div>
 	<div><%= render tweet.content %></div> 
