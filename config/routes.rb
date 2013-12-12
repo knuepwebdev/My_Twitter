@@ -5,5 +5,7 @@ MyTwitter::Application.routes.draw do
   resources :tweets, only: [:show]
   resources :text_tweets, only: [:create]
   resources :image_tweets, only: [:create]
-  resources :users, only: [:show]
+  resources :users, only: [:show] do
+  	post 'follow' => 'following_relations#create'
+  end
 end
