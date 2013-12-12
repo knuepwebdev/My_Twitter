@@ -11,7 +11,7 @@ class Dashboard
 		ImageTweet.new
 	end
 
-	def tweets
-		Tweet.all
-	end
+	def timeline
+		Timeline.new(@user)
+	end 
 end
