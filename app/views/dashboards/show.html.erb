@@ -1,14 +1,14 @@
 <h1>Dashboard</h1>
-<%= form_for @text_tweet do |form| %>
+<%= form_for @dashboard.new_text_tweet do |form| %>
 	<%= form.label :tweet %>
 	<%= form.text_field :content, placeholder: 'Type your tweet here' %>
 	<%= form.submit 'Tweet' %>
 <% end %>
 
-<%= form_for @image_tweet do |form| %>
+<%= form_for @dashboard.new_image_tweet do |form| %>
 	<%= form.label :image_tweet %>
 	<%= form.file_field :image %>
 	<%= form.submit 'Tweet' %>
 <% end %>
 
-<%= render @tweets %>
+<%= render @dashboard.tweets %>
