@@ -1,3 +1,5 @@
 <h1><%= @user.username.capitalize %></h1>
-<%= follow_user_button @user %>
+<% if current_user.can_follow?(@user) %>
+	<%= follow_user_button @user %>
+<% end %>
 <%= render @tweets %>
