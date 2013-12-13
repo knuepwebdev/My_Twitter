@@ -7,35 +7,45 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<%= link_to 'Users Directory', users_path %>
-	<h1>My Twitter</h1>
-	<div>
-		<% if user_signed_in? %>
-			<div>
-				Logged in as <%= link_to current_user.email, dashboard_path %>
+	<div id='container'>
+		<header>
+			<%= link_to 'Users Directory', users_path, id: 'users_directory' %>
+			<div id='hdr_middle'>
+				<h1 id='app_name'>My Twitter</h1>
 			</div>
-			<div>
-				<%= link_to 'Edit Profile', edit_user_registration_path %>
-			</div>
-			<div>
-				<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-			</div>
-		<% else %>
-			<div><%= link_to 'Register', new_user_registration_path %></div>
-			<div><%= link_to 'Login', new_user_session_path %></div>
+			<div id = 'hdr_right'>
+				<ul id='user_links'>
+					<% if user_signed_in? %>
+						<li>
+							Logged in as <%= link_to current_user.email, dashboard_path %>
+						</li>
+						<li>
+							<%= link_to 'Edit Profile', edit_user_registration_path %>
+						</li>
+						<li>
+							<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+						</li>
+					<% else %>
+						<li><%= link_to 'Register', new_user_registration_path %></div>
+						<li><%= link_to 'Login', new_user_session_path %></div>
+					<% end %>
+				</ul>
+				<div id='search'>
+					<%= form_for(:search, url: search_path, method: :get) do |form| %>
+						<%= form.text_field :searchterm %>
+						<%= form.submit 'Search' %>
+					<% end %> 
+				</div>
+			</div><!--#hdr_right-->
+		</header>
+		<% if alert %>
+			<div class='alert'><%= alert %></div>
 		<% end %>
-	</div>
-	<%= form_for(:search, url: search_path, method: :get) do |form| %>
-		<%= form.text_field :searchterm %>
-		<%= form.submit 'Search' %>
-	<% end %> 
-	<% if alert %>
-		<div class='alert'><%= alert %></div>
-	<% end %>
-	<% if notice %>
-		<div class='notice'><%= notice %></div>
-	<% end %>
-	<%= yield %>
+		<% if notice %>
+			<div class='notice'><%= notice %></div>
+		<% end %>
+		<%= yield %>
+	</div><!--#container-->
 </body>
 </html>
  
