@@ -1,4 +1,8 @@
-<h1>Users Directory</h1>
-<% @users.each do |user| %>
-	<div><%= link_to user.username.capitalize, user %></div>
-<% end %>
+<div class='main_header'>
+	<h1 id='users_header'>Users Directory</h1>
+</div>
+<ul>
+	<% @users.each do |user| %>
+		<li><%= link_to user.username.capitalize, user %></li>
+	<% end %>
+</ul>

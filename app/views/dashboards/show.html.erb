@@ -1,4 +1,5 @@
-<h1 id='dashboard'>Dashboard</h1>
-<div><%= link_to 'Users Directory', users_path, id: 'users_directory' %></div>
-<div><%= link_to 'Compose Tweet', new_tweet_path %></div>
+<div class='main_header'>
+	<h1 id='dashboard_header'>Dashboard</h1>
+</div>
+
 <%= render @dashboard.timeline %>
