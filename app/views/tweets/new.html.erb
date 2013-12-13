@@ -1,15 +1,17 @@
 <div class='main_header'>
-	<h1 id='tweet_header'>Tweet</h1>
+	<h1 id='tweet_header'>Compose Tweet</h1>
 </div>
-<%= form_for @tweet_composer.new_text_tweet do |form| %>
-	<%= form.label :tweet %>
-	<%= form.text_field :content, placeholder: 'Type your tweet here' %>
-	<%= form.submit 'Tweet' %>
-<% end %>
-<div id='clearfix'></div>
+<div id='tweet_forms'>
+	<%= form_for @tweet_composer.new_text_tweet do |form| %>
+		<%= form.label :tweet, class: 'tweet_form_label' %>
+		<%= form.text_field :content, placeholder: 'Type your tweet here' %>
+		<%= form.submit 'Tweet' %>
+	<% end %>
+	<div id='clearfix'></div>
 
-<%= form_for @tweet_composer.new_image_tweet do |form| %>
-	<%= form.label :image_tweet %>
-	<%= form.file_field :image %>
-	<%= form.submit 'Tweet' %>
-<% end %>
+	<%= form_for @tweet_composer.new_image_tweet do |form| %>
+		<%= form.label :image_tweet, class: 'tweet_form_label' %>
+		<%= form.file_field :image %>
+		<%= form.submit 'Tweet' %>
+	<% end %>
+</div>

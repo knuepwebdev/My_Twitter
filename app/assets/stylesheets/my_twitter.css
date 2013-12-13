@@ -97,7 +97,7 @@ header nav ul li a {
 }
 
 .main_header #tweet_header {
-	width: 75px;
+	width: 195px;
 	margin: 0 auto;
 }
 
@@ -158,6 +158,10 @@ header nav ul li a {
 	margin-bottom: 20px;
 }
 
+.tweet a:visited {
+	color: #0046FF;
+}
+
 /*FORMS*/
 .form_header {
 	font-size: 1.6em;
@@ -198,6 +202,20 @@ header nav ul li a {
 .blue_text {
 	color: #0046FF;
 }
+
+#tweet_forms {
+	margin-top: 30px;
+}
+
+#text_tweet_content {
+	width: 350px;
+}
+
+.tweet_form_label {
+	font-size: 1.3em;
+	color: #0046FF;
+}
+
 /*END FORMS*/
 
 /*END MAIN CONTENT*/
