@@ -1,3 +1,6 @@
+<div class='main_header'>
+	<h1 id='tweet_header'>Tweet</h1>
+</div>
 <%= form_for @tweet_composer.new_text_tweet do |form| %>
 	<%= form.label :tweet %>
 	<%= form.text_field :content, placeholder: 'Type your tweet here' %>

@@ -1,4 +1,6 @@
-<h1><%= @user.username.capitalize %></h1>
+<div class='main_header'>
+	<h1 id='show_user_header'><%= @user.username.capitalize %></h1>
+</div>
 <% if current_user.can_follow?(@user) %>
 	<%= follow_user_button @user %>
 <% end %>
