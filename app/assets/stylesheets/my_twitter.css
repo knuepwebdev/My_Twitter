@@ -77,12 +77,21 @@ header a:hover {
 }
 
 a#users_directory {
+	text-decoration: none;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 #main_content a {
+	font-size: 1.2em;
+}
 
+#main_content a:hover {
+	text-decoration: underline;
+}
+
+#clearfix {
+	clear: both;
 }
 
 /*END MAIN CONTENT*/
