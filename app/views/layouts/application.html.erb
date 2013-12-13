@@ -38,13 +38,15 @@
 				</div>
 			</div><!--#hdr_right-->
 			<div class='clearfix'></div>
-			<nav>
-				<ul>
-					<li><%= link_to 'Dashboard', dashboard_path %></li>
-					<li><%= link_to 'Tweet', new_tweet_path %></li>
-					<li><%= link_to 'Users Directory', users_path %></li>
-				</ul>
-			</nav>
+			<% if user_signed_in? %>
+				<nav>
+					<ul>
+						<li><%= link_to 'Dashboard', dashboard_path %></li>
+						<li><%= link_to 'Tweet', new_tweet_path %></li>
+						<li><%= link_to 'Users Directory', users_path %></li>
+					</ul>
+				</nav>
+			<% end %>
 		</header>
 		<div id='main_content'>
 			<% if alert %>
