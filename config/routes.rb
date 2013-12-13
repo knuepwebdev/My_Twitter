@@ -3,7 +3,7 @@ MyTwitter::Application.routes.draw do
   root 'home#show'
   resource :dashboard, only: [:show]
   resource :search, only: [:show]
-  resources :tweets, only: [:show]
+  resources :tweets, only: [:new, :show]
   resources :text_tweets, only: [:create]
   resources :image_tweets, only: [:create]
   resources :hashtags, only: [:show]
