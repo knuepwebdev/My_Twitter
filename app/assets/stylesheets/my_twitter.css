@@ -189,6 +189,15 @@ header nav ul li a {
 	color: #0046FF;
 }
 
+#cancel {
+	font-size: 1.2em;
+	color: #0046FF;	
+	margin: 30px 5px 10px 0;
+}
+
+.blue_text {
+	color: #0046FF;
+}
 /*END FORMS*/
 
 /*END MAIN CONTENT*/
