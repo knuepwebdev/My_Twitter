@@ -158,6 +158,39 @@ header nav ul li a {
 	margin-bottom: 20px;
 }
 
+/*FORMS*/
+.form_header {
+	font-size: 1.6em;
+	color: #0046FF;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.form_row {
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+.login_field {
+	width: 250px;
+}
+
+.form_row .email_textfield {
+	margin-left: 3%;
+}
+
+.form_row .password_field {
+	margin-left: 0.5%;
+}
+
+.shared_link {
+	text-decoration: none;
+	color: #0046FF;
+}
+
+/*END FORMS*/
+
 /*END MAIN CONTENT*/
 
 @media screen and (max-width: 950px) {
