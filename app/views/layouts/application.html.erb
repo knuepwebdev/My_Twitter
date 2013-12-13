@@ -9,8 +9,7 @@
 <body>
 	<div id='container'>
 		<header>
-			<%= link_to 'Users Directory', users_path, id: 'users_directory' %>
-			<div id='hdr_middle'>
+			<div id='hdr_left'>
 				<h1 id='app_name'>My Twitter</h1>
 			</div>
 			<div id = 'hdr_right'>
@@ -26,8 +25,8 @@
 							<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 						</li>
 					<% else %>
-						<li><%= link_to 'Register', new_user_registration_path %></div>
-						<li><%= link_to 'Login', new_user_session_path %></div>
+						<li><%= link_to 'Register', new_user_registration_path %></li>
+						<li><%= link_to 'Login', new_user_session_path %></li>
 					<% end %>
 				</ul>
 				<div id='search'>
@@ -38,13 +37,15 @@
 				</div>
 			</div><!--#hdr_right-->
 		</header>
-		<% if alert %>
-			<div class='alert'><%= alert %></div>
-		<% end %>
-		<% if notice %>
-			<div class='notice'><%= notice %></div>
-		<% end %>
-		<%= yield %>
+		<div id='main_content'>
+			<% if alert %>
+				<div class='alert'><%= alert %></div>
+			<% end %>
+			<% if notice %>
+				<div class='notice'><%= notice %></div>
+			<% end %>
+			<%= yield %>
+		</div><!--#main_content-->
 	</div><!--#container-->
 </body>
 </html>
