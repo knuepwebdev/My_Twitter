@@ -51,6 +51,10 @@ header a:hover {
 	width: 30%;
 }
 
+#user_links {
+	margin-right: 10px;
+}
+
 #hdr_right ul {
 	position: absolute;
 	right: 10px;
@@ -112,12 +116,19 @@ a#users_directory {
 	float: right;
 	width: 35%;
 	margin-top: 5px;
+	margin-right: 10px;
 }
 
 #new_image_tweet {
 	float: right;
 	width: 48%;
 	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.timeline {
+	float: left;
+	width: 50%;
 }
 
 .tweet {
@@ -126,3 +137,57 @@ a#users_directory {
 }
 
 /*END MAIN CONTENT*/
+
+@media screen and (max-width: 950px) {
+	#new_text_tweet {
+		float: none;
+		width: 100%;
+	}
+
+	#new_image_tweet {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 50px) and (max-width: 500px) {
+	header {
+		width: 100%;
+		height: 150px;
+	}
+
+	#hdr_left {
+		float: none;
+		width: 100%;	
+	}
+
+	#app_name {
+		width: 60%;
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 2.5em;
+}
+
+	#hdr_right {
+		float: none;
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	#hdr_right ul {
+		position: static;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#search {
+		position: static;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#search_searchterm {
+		width: 50%;
+	}
+}
