@@ -30,12 +30,14 @@
 					<% end %>
 				</ul>
 				<div class='clearfix'></div>
-				<div id='search'>
-					<%= form_for(:search, url: search_path, method: :get) do |form| %>
-						<%= form.text_field :searchterm %>
-						<%= form.submit 'Search' %>
-					<% end %> 
-				</div>
+				<% if user_signed_in? %>	
+					<div id='search'>
+						<%= form_for(:search, url: search_path, method: :get) do |form| %>
+							<%= form.text_field :searchterm %>
+							<%= form.submit 'Search' %>
+						<% end %> 
+					</div>
+				<% end %>
 			</div><!--#hdr_right-->
 			<div class='clearfix'></div>
 			<% if user_signed_in? %>

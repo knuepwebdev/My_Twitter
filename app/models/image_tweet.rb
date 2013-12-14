@@ -1,4 +1,5 @@
 class ImageTweet < ActiveRecord::Base
+	has_many :tweets, as: :content
 	has_attached_file :image, styles: {
 		thumb: '100x100>'
 	}
