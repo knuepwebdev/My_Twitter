@@ -259,23 +259,23 @@ header nav ul li a {
 	}
 
 	#hdr_right ul {
-		/*position: static;*/
 		margin-top: 10px;
 		margin-left: 10px;
 	}
 
 	#search {
-		/*position: static;*/
+		float: none;
+		width: 250px;
 		margin-top: 10px;
-		margin-left: 10px;
+		margin-bottom: 10px;
 	}
 
 	#search_searchterm {
-		width: 50%;
+		width: 120px;
 	}
 
 	header nav ul {
-		margin: 0 auto;
+		margin: 10px auto;
 		width: 150px;
 	}
 
@@ -288,4 +288,14 @@ header nav ul li a {
 	header nav ul li a {
 		font-size: 1.2em;
 	}
+
+	.main_header {
+		width: 150px;
+		margin: 0 auto;
+	}
+
+	.main_header #dashboard_header {
+	width: 150px;
+	margin: 0 auto;
+}
 }
