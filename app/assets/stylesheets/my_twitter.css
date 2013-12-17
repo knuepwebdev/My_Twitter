@@ -259,8 +259,8 @@ header nav ul li a {
 	}
 
 	#hdr_right ul {
-		margin-top: 10px;
-		margin-left: 10px;
+		margin: 10px auto;
+		width: 150px;
 	}
 
 	#search {
@@ -297,5 +297,9 @@ header nav ul li a {
 	.main_header #dashboard_header {
 	width: 150px;
 	margin: 0 auto;
-}
+	}
+
+	#cancel_button {
+		margin-bottom: 20px;
+	}
 }
