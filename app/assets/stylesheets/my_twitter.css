@@ -46,6 +46,7 @@ header a:hover {
 #user_links {
 	float: right;
 	margin: 10px 10px 10px 0;
+	font-size: 1.2em;
 }
 
 #hdr_right ul {
@@ -74,7 +75,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 /*END HEADER*/
 
@@ -157,14 +158,11 @@ header nav ul li a {
 	margin-right: 10px;
 }
 
-.timeline {
-	float: left;
-	width: 50%;
-}
-
 .tweet {
 	margin-top: 20px;
+	margin-right: 10px;
 	margin-bottom: 20px;
+	overflow: scroll;
 }
 
 .tweet a:visited {
@@ -200,6 +198,7 @@ header nav ul li a {
 .shared_link {
 	text-decoration: none;
 	color: #0046FF;
+	font-size: 1.2em;
 }
 
 #cancel {
@@ -238,7 +237,7 @@ header nav ul li a {
 /*END MAIN CONTENT*/
 /*BEGIN FOOTER*/
 .footer {
-	margin: 15px 10px;
+	margin: 20px 10px;
 }
 /*END FOOTER*/
 
@@ -258,7 +257,7 @@ header nav ul li a {
 @media screen and (min-width: 50px) and (max-width: 645px) {
 	header {
 		width: 100%;
-		height: 250px;
+		height: 285px;
 	}
 
 	#hdr_left {
@@ -305,7 +304,7 @@ header nav ul li a {
 	}
 
 	header nav ul li a {
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 
 	.main_header {
