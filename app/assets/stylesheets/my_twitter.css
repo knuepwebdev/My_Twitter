@@ -236,6 +236,11 @@ header nav ul li a {
 /*END FORMS*/
 
 /*END MAIN CONTENT*/
+/*BEGIN FOOTER*/
+.footer {
+	margin: 15px 10px;
+}
+/*END FOOTER*/
 
 @media screen and (max-width: 950px) {
 	#new_text_tweet {
