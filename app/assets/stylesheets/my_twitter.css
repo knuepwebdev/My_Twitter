@@ -325,4 +325,9 @@ header nav ul li a {
 		margin-left: 0;
 	}
 	/*END LOGIN PAGE*/
+	/*SHOW USER PAGE*/
+	.main_header #show_user_header {
+		margin: 0 0 10px 0;
+	}
+	/*END SHOW USER*/
 }
