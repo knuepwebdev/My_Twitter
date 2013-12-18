@@ -5,13 +5,13 @@
 	<%= form_for @tweet_composer.new_text_tweet do |form| %>
 		<%= form.label :tweet, class: 'tweet_form_label' %>
 		<%= form.text_field :content, placeholder: 'Type your tweet here' %>
-		<%= form.submit 'Tweet', class: 'tweet_button' %>
+		<%= form.submit 'Tweet', class: 'tweet_button blue_button' %>
 	<% end %>
 	<div id='clearfix'></div>
 
 	<%= form_for @tweet_composer.new_image_tweet do |form| %>
 		<%= form.label :image_tweet, class: 'tweet_form_label' %>
 		<%= form.file_field :image %>
-		<%= form.submit 'Tweet', class: 'tweet_button' %>
+		<%= form.submit 'Tweet', class: 'tweet_button blue_button' %>
 	<% end %>
 </div>

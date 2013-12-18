@@ -35,7 +35,7 @@
 					<div id='search'>
 						<%= form_for(:search, url: search_path, method: :get) do |form| %>
 							<%= form.text_field :searchterm %>
-							<%= form.submit 'Search' %>
+							<%= form.submit 'Search', class: 'blue_button' %>
 						<% end %> 
 					</div>
 				<% end %>

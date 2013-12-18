@@ -57,6 +57,11 @@ header a:hover {
 	margin-right: 10px;
 }
 
+.blue_button {
+	background-color: #0046ff;
+	color: #fff;
+}
+
 header nav ul {
 	margin: 10px;
 }
