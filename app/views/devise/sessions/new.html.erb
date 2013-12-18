@@ -2,11 +2,11 @@
 
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <div class='form_row'>
-  	<%= f.label :email %>
+  	<%= f.label :email, class: 'login_label' %>
   	<%= f.email_field :email, :autofocus => true, class: 'login_field email_textfield' %>
   </div>
   <div class='form_row'>
-  	<%= f.label :password %>
+  	<%= f.label :password, class: 'login_label' %>
   	<%= f.password_field :password,  class: 'login_field password_field' %>
   </div>
   <% if devise_mapping.rememberable? -%>

@@ -315,4 +315,14 @@ header nav ul li a {
 	#image_tweet_image {
 		margin: 5px 0;
 	}
+
+	/*LOGIN PAGE*/
+	.login_label {
+		display: block;
+	}
+
+	.form_row .email_textfield {
+		margin-left: 0;
+	}
+	/*END LOGIN PAGE*/
 }
