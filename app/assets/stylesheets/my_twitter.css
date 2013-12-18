@@ -61,6 +61,7 @@ header a:hover {
 	background-color: #0046ff;
 	color: #fff;
 	padding: 5px 10px;
+	margin: 5px 0;
 }
 
 header nav ul {
@@ -220,6 +221,14 @@ header nav ul li a {
 .tweet_form_label {
 	font-size: 1.3em;
 	color: #0046FF;
+}
+
+#forgot_password {
+	margin: 10px 0;
+}
+
+.reset_field {
+	margin-bottom: 10px;
 }
 
 /*END FORMS*/
