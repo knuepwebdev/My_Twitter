@@ -301,4 +301,21 @@ header nav ul li a {
 	#cancel_button {
 		margin-bottom: 20px;
 	}
+
+	.tweet_form_label {
+		margin: 5px 0;
+	}
+
+	#text_tweet_content {
+		width: 90%;
+		margin: 5px 0;
+	}
+
+	.tweet_button {
+		margin: 5px 0;
+	}
+
+	#image_tweet_image {
+		margin: 5px 0;
+	}
 }
