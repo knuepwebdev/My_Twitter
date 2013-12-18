@@ -81,10 +81,12 @@ header nav ul li a {
 /*FLASH MESSAGES*/
 .alert {
 	color: red;
+	padding: 10px 0;
 }
 
 .notice {
 	color: green;
+	padding: 10px 0;
 }
 
 /*MAIN CONTENT*/
@@ -303,7 +305,7 @@ header nav ul li a {
 
 	.main_header {
 		width: 150px;
-		margin: 0;
+		margin: 10px 0;
 	}
 
 	.main_header #dashboard_header {
