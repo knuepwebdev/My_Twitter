@@ -291,12 +291,11 @@ header nav ul li a {
 
 	.main_header {
 		width: 150px;
-		margin: 0 auto;
+		margin: 0;
 	}
 
 	.main_header #dashboard_header {
 	width: 150px;
-	margin: 0 auto;
 	}
 
 	#cancel_button {
