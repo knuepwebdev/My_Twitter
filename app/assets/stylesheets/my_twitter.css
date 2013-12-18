@@ -60,6 +60,7 @@ header a:hover {
 .blue_button {
 	background-color: #0046ff;
 	color: #fff;
+	padding: 5px 10px;
 }
 
 header nav ul {
