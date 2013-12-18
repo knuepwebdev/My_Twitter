@@ -247,15 +247,13 @@ header nav ul li a {
 	#app_name {
 		width: 150px;
 		margin-top: 10px;
-		margin-right: auto;
-		margin-left: auto;
 		font-size: 2.5em;
 }
 
 	#hdr_right {
 		float: none;
 		width: 150px;
-		margin: 0 auto;
+		margin-left: 10px;
 	}
 
 	#hdr_right ul {
@@ -275,7 +273,6 @@ header nav ul li a {
 	}
 
 	header nav ul {
-		margin: 10px auto;
 		width: 150px;
 	}
 
