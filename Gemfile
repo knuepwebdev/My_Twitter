@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'paperclip', '3.4.0'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
+gem 'aws-sdk', '~> 1.5.7'
 
 group :doc do
   gem 'sdoc', require: false
